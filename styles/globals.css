@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#450808] text-[#959595]
+    tracking-wide text-justify font-garamond
+    text-base sm:text-lg 4xl:text-2xl
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-left
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl 4xl:text-8xl
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl 4xl:text-5xl
+  }
+
+  h3 {
+    @apply: 4xl:text-2xl
+  }
+
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply bg-[#450808] rounded-lg font-diablo font-bold text-lg 4xl:text-2xl
+    w-full p-2 border-2 border-[#959595]
+  }
+
+  input::placeholder, textarea::placeholder {
+    @apply text-gray-700
+  }
+  
+  label {
+    @apply: text-lg 4xl:text-2xl
+  }
+}
+
+@font-face {
+  font-family: "Diablo";
+  src: url("../public/fonts/Diablo_L.ttf");
+}
+
+@font-face {
+  font-family: "Garamond";
+  src: url("../public/fonts/AGaramondPro-Regular.otf");
+}
